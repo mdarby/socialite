@@ -5,15 +5,16 @@
   text-align: right;
   margin-bottom: 100px;
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px
+  -moz-border-radius: 4px;
 }
 
-#socialite .blurb{
+#socialite .advert{
   vertical-align: middle;
   float: left;
-  margin-top: -1px
+  margin-top: -1px;
+/*  display: none;*/
 }
 
 #socialite img{
-  padding-right: 5px
+  padding-right: 5px;
 }
