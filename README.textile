@@ -35,7 +35,7 @@ h3. How to Use
 h3. Looks
 
 Socialite looks like this by default:
-!matt-darby.com/files/73/original/Picture%2010.png!
+!http://matt-darby.com/files/73/original/Picture%2010.png!
 
 Of course, you can style it anyway you wish by tweaking @stylesheets/socialite.css@
 
