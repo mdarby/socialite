@@ -6,7 +6,7 @@ src_file = File.join(File.dirname(__FILE__) , "assets", "stylesheets", "socialit
 FileUtils.cp_r(src_file, dest_file)
 
 # Images
-dest_folder = File.join(RAILS_ROOT, "public", "images")
-FileUtils.cp_r "#{FILE.dirname(__FILE__)}/assets/images/", "#{RAILS_ROOT}/public/images"
+FileUtils.mkdir "#{RAILS_ROOT}/public/images/socialite"
+FileUtils.cp_r "#{FILE.dirname(__FILE__)}/assets/images/", "#{RAILS_ROOT}/public/images/socialite"
 
 puts "Files copied - Installation complete!" 
