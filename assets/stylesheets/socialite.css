@@ -1,0 +1,19 @@
+#socialite{
+  background: whitesmoke;
+  padding: 10px;
+  padding-bottom: 5px;
+  text-align: right;
+  margin-bottom: 100px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px
+}
+
+#socialite .blurb{
+  vertical-align: middle;
+  float: left;
+  margin-top: -1px
+}
+
+#socialite img{
+  padding-right: 5px
+}
