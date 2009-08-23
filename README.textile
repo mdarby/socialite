@@ -2,28 +2,48 @@ h2. Socialite
 
 A Ruby on Rails plugin that provides an easy way to share your content on the most popular social networking sites.
 
+
 h3. What it does
 
-Socialite simply adds a view helper @socialite@ to your application. Pass it a URL, content, and title and it will generate links to submit your content to the most popular social networking sites.
+Socialite simply adds a view helper @socialite@ to your application. Pass it a URL and title and it will generate links to submit your content to the most popular social networking sites.
+
+* Twitter
+* Digg
+* Facebook
+* Reddit
+* StumbleUpon
+* Technorati
+* Email
+
 
 h3. Requirements
 
 None, yo.
+
 
 h3. How to Install
 
 Install the Socialite plugin:
 <pre>./script/plugin install git://github.com/mdarby/socialite.git</pre>
 
+
 h3. How to Use
 
-<pre>
-  <%= socialite(:url => URL, :title => TITLE, :content => CONTENT) %>
-</pre>
+<pre><%= socialite(:url => URL, :title => TITLE) %></pre>
+
+
+h3. Looks
+
+Socialite looks like this by default:
+!matt-darby.com/files/73/original/Picture%2010.png!
+
+Of course, you can style it anyway you wish by tweaking @stylesheets/socialite.css@
+
 
 h3. Help
 
 Add a ticket to "Socialite's Lighthouse Account":http://mdarby.lighthouseapp.com/projects/36043-socialite/overview
+
 
 h3. About the Author
 

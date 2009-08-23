@@ -1,16 +1,15 @@
 module Socialite
   
   def socialite(options)
-    url     = options[:url]
-    title   = options[:title]
-    content = options[:content]
+    url   = options[:url]
+    title = options[:title]
     
-    unless url.present? && title.present? && content.present?
-      RAILS_DEFAULT_LOGGER.warn "Socialite requires a URL, title and content!"
+    unless url.present? && title.present?
+      RAILS_DEFAULT_LOGGER.warn "Socialite requires a URL and title!"
     else    
       links = { 
         :delicious   => "http://www.del.icio.us/post?url=#{url}&title=#{title}",
-        :digg        => "http://www.digg.com/submit?url=#{url}&title=#{title}&bodytext=#{content}",
+        :digg        => "http://www.digg.com/submit?url=#{url}&title=#{title}",
         :facebook    => "http://www.facebook.com/share.php?u=#{url}",
         :reddit      => "http://www.reddit.com/submit?url=#{url}&title=#{title}",
         :stumbleupon => "http://www.stumbleupon.com/submit?url=#{url}&title=#{title}",
