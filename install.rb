@@ -6,11 +6,12 @@ src_file = File.join(File.dirname(__FILE__) , "assets", "stylesheets", "socialit
 FileUtils.cp_r(src_file, dest_file)
 
 # Images
-src_images = "#{FILE.dirname(__FILE__)}/assets/images"
-dest_images = "#{RAILS_ROOT}/pubilic/images/socialite"
-puts "#{src_images} -- #{dest_images}"
+FileUtils.mkdir File.join(RAILS_ROOT, "public", "images", "socialite")
 
-FileUtils.mkdir dest_images
-FileUtils.cp_r Dir.glob("#{src_images}/*.rb"), dest_images, :verbose => true
+%w{delicious digg email facebook reddit stumbleupon technorati twitter}.each do |site|
+  dest_file = File.join(RAILS_ROOT, "public", "images", "socialite", "#{site}_16.png")
+  src_file = File.join(File.dirname(__FILE__) , "assets", "images", "#{site}_16.png")
+  FileUtils.cp_r(src_file, dest_file)
+end
 
-puts "Files copied - Installation complete!" 
+puts "Files copied - Installation complete!"
