@@ -6,7 +6,9 @@ src_file = File.join(File.dirname(__FILE__) , "assets", "stylesheets", "socialit
 FileUtils.cp_r(src_file, dest_file)
 
 # Images
-FileUtils.mkdir "#{RAILS_ROOT}/public/images/socialite"
-FileUtils.cp_r "#{FILE.dirname(__FILE__)}/assets/images/*", "#{RAILS_ROOT}/public/images/socialite/"
+src_images = "#{FILE.dirname(__FILE__)}/assets/images"
+dest_images = "#{RAILS_ROOT}/pubilic/images/socialite"
+FileUtils.mkdir dest_images
+FileUtils.cp_r Dir.glob("#{src_images}/*.rb"), dest_images, :verbose => true
 
 puts "Files copied - Installation complete!" 
