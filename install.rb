@@ -8,6 +8,8 @@ FileUtils.cp_r(src_file, dest_file)
 # Images
 src_images = "#{FILE.dirname(__FILE__)}/assets/images"
 dest_images = "#{RAILS_ROOT}/pubilic/images/socialite"
+puts "#{src_images} -- #{dest_images}"
+
 FileUtils.mkdir dest_images
 FileUtils.cp_r Dir.glob("#{src_images}/*.rb"), dest_images, :verbose => true
 
