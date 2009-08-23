@@ -7,6 +7,6 @@ FileUtils.cp_r(src_file, dest_file)
 
 # Images
 dest_folder = File.join(RAILS_ROOT, "public", "images")
-FileUtils.cp_r 'assets/images/', "#{RAILS_ROOT}/public/images"
+FileUtils.cp_r "#{FILE.dirname(__FILE__)}/assets/images/", "#{RAILS_ROOT}/public/images"
 
 puts "Files copied - Installation complete!" 
