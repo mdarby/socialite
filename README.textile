@@ -13,7 +13,7 @@ None, yo.
 h3. How to Install
 
 Install the Socialite plugin:
-<pre>./script/plugin install git@github.com:/mdarby/socialite.git</pre>
+<pre>./script/plugin install git://github.com/mdarby/socialite.git</pre>
 
 h3. How to Use
 
