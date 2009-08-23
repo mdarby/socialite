@@ -6,10 +6,7 @@ src_file = File.join(File.dirname(__FILE__) , "assets", "stylesheets", "socialit
 FileUtils.cp_r(src_file, dest_file)
 
 # Images
-%w{delicious digg email facebook reddit stumbleupon technorati twitter}.each do |site|
-	dest_file = File.join(RAILS_ROOT, "public", "images", "socialite", "#{site}_16.png")
-	src_file = File.join(File.dirname(__FILE__) , "assets", "images", "#{site}_16.png")
-	FileUtils.cp_r(src_file, dest_file)
-end
+dest_folder = File.join(RAILS_ROOT, "public", "images")
+FileUtils.cp_r 'assets/images/', dest_folder
 
-puts "Files copied - Installation complete!"
+puts "Files copied - Installation complete!" 
