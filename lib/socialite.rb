@@ -8,7 +8,7 @@ module Socialite
       RAILS_DEFAULT_LOGGER.warn "Socialite requires a URL and title!"
     else    
       links = { 
-        :delicious   => "http://www.del.icio.us/post?url=#{url}&title=#{title}",
+        :delicious   => "http://www.delicious.com/post?url=#{url}&title=#{title}",
         :digg        => "http://www.digg.com/submit?url=#{url}&title=#{title}",
         :facebook    => "http://www.facebook.com/share.php?u=#{url}",
         :reddit      => "http://www.reddit.com/submit?url=#{url}&title=#{title}",
